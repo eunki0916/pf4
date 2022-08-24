@@ -437,10 +437,11 @@ main .sidebar {
   border-radius: 10px;
 }
 #login .password a {
-  text-align: end;
   margin: 20px 0px;
   position: relative;
   font-size: 15px;
+  width: 60px;
+  left: 255px;
 }
 #login .password a:hover {
   text-decoration-line: underline;

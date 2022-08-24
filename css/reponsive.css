@@ -143,6 +143,9 @@
     
   padding-left: 5px;
   }
+  #login .password a {
+    left: 175px;
+  }
   .finace ul {
     width: 236px;
   }
