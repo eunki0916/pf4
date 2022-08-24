@@ -137,7 +137,7 @@
   }
   #login .service ul li:nth-child(1)::after, #login .service ul li:nth-child(2)::after {
     
-  transform: translateX(0px);
+  transform: translateX(5px);
   }
   #login .service ul li a img {
     
