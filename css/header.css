@@ -64,6 +64,7 @@ header .tnb .tnbli:nth-child(2):hover .tnbCard::before, header .tnb .tnbli:nth-c
   position: absolute;
   border-bottom: 2px solid black;
   bottom: 0;
+  transform: translateX(-10px);
   z-index: 2;
 }
 header .tnb .tnbli:nth-child(6):hover .tnbCustomer::before {
@@ -72,6 +73,7 @@ header .tnb .tnbli:nth-child(6):hover .tnbCustomer::before {
   position: absolute;
   border-bottom: 2px solid black;
   bottom: 0;
+  transform: translateX(-10px);
   z-index: 2;
 }
 header .tnb .tnbli:hover::after {
