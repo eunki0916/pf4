@@ -22,6 +22,25 @@
   header .search {
     display: none;
   }
+  header .account {
+    
+  left: 220px;
+  }
+  header .menuCard {
+    left: 220px;
+  }
+  header .benefit {
+    left: 220px;
+  }
+  header .menuFinance {
+    left: 220px;
+  }
+  header .culture {
+    left: 220px;
+  }
+  header .customer {
+    left: 220px;
+  }
   main .content {
     width: 78vw;
   }
