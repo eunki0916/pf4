@@ -157,3 +157,13 @@
     width: 236px;
   }
 }
+
+@media screen and (max-width: 834px) {
+  body {
+    display: none;
+  }
+  
+}
+@media screen and (min-width: 375px) {
+    
+}

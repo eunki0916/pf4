@@ -23,7 +23,7 @@
                 <h1><a href=""><img src="img/logo_hyundaicard.svg" alt=""></a>현대카드</h1>
                 <ul class="tnb">
                     <li class="tnbli">
-                        <a href="">My Account</a>
+                        <a href="" class="tnbAccount">My Account</a>
                         <div class="account">
                             <ul>
                                 <h3>이용내역</h3>
@@ -78,7 +78,7 @@
                         </div>
                     </li>
                     <li class="tnbli">
-                        <a href="">카드</a>
+                        <a href="" class="tnbCard">카드</a>
                         <div class="menuCard">
                             <ul>
                                 <h3>3층 시스템</h3>
@@ -102,7 +102,7 @@
                         </div>
                     </li>
                     <li class="tnbli">
-                        <a href="">혜택</a>
+                        <a href="" class="tnbBenefit">혜택</a>
                         <div class="benefit">
                             <ul>
                                 <h3>나만의 혜택</h3>
@@ -144,7 +144,7 @@
                         </div>
                     </li>
                     <li class="tnbli">
-                        <a href="">금융</a>
+                        <a href="" class="tnbFinance">금융</a>
                         <div class="menuFinance">
                             <ul>
                                 <h3>금융</h3>
@@ -155,7 +155,7 @@
                         </div>
                     </li>
                     <li class="tnbli">
-                        <a href="">컬쳐</a>
+                        <a href="" class="tnbCulture">컬쳐</a>
                         <div class="culture">
                             <ul>
                                 <h3>현대카드만의 독보적인 컬처 콘텐츠를
@@ -186,7 +186,7 @@
                         </div>
                     </li>
                     <li class="tnbli">
-                        <a href="">고객지원</a>
+                        <a href="" class="tnbCustomer">고객지원</a>
                         <div class="customer">
                             <ul>
                                 <h3>일반 상담·문의</h3>
@@ -235,7 +235,7 @@
                 </ul>
             </div>
             <div class="right flex flexAlignCenter">
-                <ul>
+                <ul id="right">
                     <li><a href="">개인사업자</a></li>
                     <li><a href="">법인</a></li>
                     <li><a href="">가맹점</a></li>
@@ -259,7 +259,7 @@
                                     <li><a href=""><img src="img/home_banner_s_mxboost_1.png" alt=""></a></li>
                                     <li><a href=""><img src="img/home_banner_s_myb.png" alt=""></a></li>
                                 </ul>
-                            </div>                       
+                            </div>
                             <div class="imgInner">
                                 <ul>
                                     <li><a href=""><img src="img/PC_home_banner_img_amex.png" alt=""></a></li>
@@ -448,11 +448,21 @@
                         </div>
                         <div class="footerTel">
                             <ul>
-                                <li><p>고객센터</p></li>
-                                <li><p>카드신청</p></li>
-                                <li><p>금융신청</p></li>
-                                <li><p>도난분실신고</p></li>
-                                <li><p>해외</p></li>
+                                <li>
+                                    <p>고객센터</p>
+                                </li>
+                                <li>
+                                    <p>카드신청</p>
+                                </li>
+                                <li>
+                                    <p>금융신청</p>
+                                </li>
+                                <li>
+                                    <p>도난분실신고</p>
+                                </li>
+                                <li>
+                                    <p>해외</p>
+                                </li>
                             </ul>
                             <ul>
                                 <li><a href="tel:1577-6000">1577-6000</a></li>
@@ -505,7 +515,23 @@
             document.querySelector('.imgContainer').style.transform = 'translate(-2400px)';
         });
 
-
+        window.addEventListener('scroll', e=> {
+            if(document.documentElement.scrollTop > 50) {
+                document.getElementById("right").className ="hide";
+                document.querySelector('header .inner').style.height = "50px";
+                document.querySelector('header .tnb').style.padding = "10px";            
+                document.querySelector('header .search').style.height = "30px";
+                document.querySelector('header .search').style.border = "1px solid #858585";
+            } else {
+                document.getElementById("right").className ="right";
+                document.getElementById("right").className ="flex";
+                document.getElementById("right").className ="flexAlignCenter";
+                document.querySelector('header .inner').style.height = "80px";
+                document.querySelector('header .tnb').style.padding = "30px";            
+                document.querySelector('header .search').style.height = "40px";
+                document.querySelector('header .search').style.border = "1px solid";
+            }
+        });
     </script>
 </body>
 

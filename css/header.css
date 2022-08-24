@@ -7,7 +7,9 @@ header .inner {
   height: 80px;
   border-bottom: 1px solid #eee;
   box-shadow: 0 1px 3px 0 #ccc9c9;
-  /*! position: fixed; */
+  position: fixed;
+  z-index: 3;
+  background-color: white;
 }
 header .inner:hover{
   box-shadow: initial;
@@ -47,35 +49,36 @@ header .tnb li:hover .account , header .tnb li:hover .menuCard , header .tnb li:
   display: flex;
   z-index: 2;
 }
-header .tnb .tnbli:hover a::before {
+header .tnb .tnbli:hover .tnbAccount::before {
   content: "";
   width: 110px;
   position: absolute;
   border-bottom: 2px solid black;
   bottom: 0;
   transform: translateX(-10px);
+  z-index: 2;
 }
-header .tnb .tnbli:nth-child(2):hover a::before, header .tnb .tnbli:nth-child(3):hover a::before, header .tnb .tnbli:nth-child(4):hover a::before, header .tnb .tnbli:nth-child(5):hover a::before {
+header .tnb .tnbli:nth-child(2):hover .tnbCard::before, header .tnb .tnbli:nth-child(3):hover .tnbBenefit::before, header .tnb .tnbli:nth-child(4):hover .tnbFinance::before, header .tnb .tnbli:nth-child(5):hover .tnbCulture::before {
   content: "";
   width: 55px;
   position: absolute;
   border-bottom: 2px solid black;
   bottom: 0;
-
+  z-index: 2;
 }
-header .tnb .tnbli:nth-child(6):hover a::before {
+header .tnb .tnbli:nth-child(6):hover .tnbCustomer::before {
   content: "";
   width: 90px;
   position: absolute;
   border-bottom: 2px solid black;
   bottom: 0;
-
+  z-index: 2;
 }
 header .tnb .tnbli:hover::after {
   content: "";
   display: block;
   position: absolute;
-  top: 81px;
+  top: 51px;
   left: 0;
   height: 400px;
   width: 100%;
@@ -224,7 +227,8 @@ header .search {
   border-radius: 18px;
   height: 40px;
   text-align: center;
-  line-height: 2.8;
+  line-height: 2.5;
+  position: relative;
 }
 header .search::before {
   content: "";
@@ -232,7 +236,7 @@ header .search::before {
   width: 20px;
   height: 20px;
   background-image: url(../img/search_black_24dp.svg);
-  top: 30px;
-  right: 275px;
+  top: 10px;
+  left: 10px;
   z-index: 1;
 }
