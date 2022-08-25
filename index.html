@@ -310,11 +310,20 @@
                             <li><a href="">M BOOST</a></li>
                             <li><a href="">X BOOST</a></li>
                             <li><a href="">Z family</a></li>
-                            <li><a href="">ZERO Edition2<span class="br hide"></span>(할인형)</a></li>
+                            <li><a href="">ZERO Edition2<span class="br"></span>(할인형)</a></li>
                         </ul>
                     </div>
                 </section>
-
+                    <div class="cardFinder hide">
+                        <a href="">
+                            <img src="img/card-outline.svg" alt="">
+                                <div class="cardFinderinner">
+                                <h2>카드파인더</h2>
+                                <p>내게 맞는 혜택별 카드를 찾아보세요!</p>
+                                </div>
+                            </img>
+                        </a>
+                    </div>
                 <section id="brands" class="flex">
                     <div class="cardLeft flex flexColumn">
                         <div class="cardAll flex flexColumn flexBetween">
@@ -343,7 +352,9 @@
                         </ul>
                     </div>
                 </section>
-
+                    <div class="eventAll hide">
+                        <a href="">모든 카드보기</a>
+                    </div>
                 <section id="events">
                     <div class="eventImg">
                         <ul>
@@ -369,6 +380,9 @@
                         </ul>
                     </div>
                 </section>
+                    <div class="eventAll hide">
+                        <a href="">이벤트<br/>전체보기</a>
+                    </div>
             </div>
 
             <div class="sidebar">
@@ -401,6 +415,7 @@
                     <div class="finace">
                         <a href="">
                             <h2>금융</h2>
+                            <p class="mFinace hide">어려울 때 힘이 되는 현대카드 금융 상품</p>
                         </a>
                         <ul>
                             <li>
@@ -450,6 +465,14 @@
                                 <li><a href="">개인사업자</a></li>
                                 <li><a href="">법인</a></li>
                                 <li><a href="">가맹점</a></li>
+                            </ul>
+                        </div>
+                        <div class="mfooterLink hide">
+                            <ul>
+                                <li><a href="">이용약관</a></li>
+                                <li><a href="">개인정보 처리방침</a></li>
+                                <li><a href="">인재모집</a></li>
+                                <li><a href="">PC버전</a></li>
                             </ul>
                         </div>
                         <div class="footerTel">
@@ -510,34 +533,8 @@
 
     </main>
 
-    <script type="text/javascript">
-        document.querySelector('.button1').addEventListener('click', function () {
-            document.querySelector('.imgContainer').style.transform = 'initial';
-        });
-        document.querySelector('.button2').addEventListener('click', function () {
-            document.querySelector('.imgContainer').style.transform = 'translate(-1200px)';
-        });
-        document.querySelector('.button3').addEventListener('click', function () {
-            document.querySelector('.imgContainer').style.transform = 'translate(-2400px)';
-        });
-
-        window.addEventListener('scroll', e=> {
-            if(document.documentElement.scrollTop > 50) {
-                document.getElementById("right").className ="hide";
-                document.querySelector('header .inner').style.height = "50px";
-                document.querySelector('header .tnb').style.padding = "10px";            
-                document.querySelector('header .search').style.height = "30px";
-                document.querySelector('header .search').style.border = "1px solid #858585";
-            } else {
-                document.getElementById("right").className ="right";
-                document.getElementById("right").className ="flex";
-                document.getElementById("right").className ="flexAlignCenter";
-                document.querySelector('header .inner').style.height = "80px";
-                document.querySelector('header .tnb').style.padding = "30px";            
-                document.querySelector('header .search').style.height = "40px";
-                document.querySelector('header .search').style.border = "1px solid";
-            }
-        });
+    <script type="text/javascript" src="js/pf.js">
+        
     </script>
 </body>
 
