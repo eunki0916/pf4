@@ -397,7 +397,7 @@
   transform: scale(1.6) translate(13px, -30px);
   }
   .eventAll {
-    display: flex;
+    display: flex !important;;
     justify-content: center;
     text-align: center;
   }
