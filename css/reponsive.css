@@ -166,6 +166,7 @@
   
 }
 @media screen and (max-width: 375px) {
+  
   header .tnb, header .right {
     display: none;
   }
@@ -175,22 +176,29 @@
   display: flex;
   justify-content: center;
   width: 100vw;
+  position: initial;
+  border: transparent;
   }
   main .inner {
-    width: 100vw;
+    width: 94vw;
     display: flex;
     flex-direction: column;
+    margin: 0px 10px;
   }
   main .rightLogin {
     display: none;
   }
   main .content {
     width: 100vw;
+    margin-top: 0;
   }
   section {
     margin: 50px 20px;
     width: calc(100vw - 20px);
-    overflow: scroll;
+  }
+  #banner {
+    overflow-x: scroll;
+    margin-top: 10px;
   }
   #banner .bannerBox {
     width: 300vw;
@@ -240,7 +248,7 @@
     position: absolute;
     width: 90vw;
     border-bottom: 1px solid #858585;
-    bottom: 240px;
+    bottom: 270px;
   }
   #origin {
     flex-direction: column;
@@ -264,5 +272,208 @@
   }
   #origin .hash {
     display: none;
+  }
+  #origin .cardRight li:nth-child(1), #origin .cardRight li:nth-child(2) {
+    display: none;
+  }
+  #origin .cardRight {
+    
+  width: 70vw;
+  margin: 0px 30px;
+  padding: 0;
+  }
+  #origin .cardRight ul {
+    
+  width: 70vw;
+  }
+  #origin .cardRight li {
+    
+  width: calc(100% / 3 - 50px);
+  padding-top: 50px;
+  margin: 0px 0px 50px 0px;
+  letter-spacing: -1.1px;
+  }
+  #origin .cardRight li .br {
+    display: block !important;
+  }
+  .cardFinder {
+    display: block !important;
+    margin: 20px;
+  }
+  .cardFinder a {
+    width: 80vw;
+    display: flex;
+  }
+  .cardFinder img {
+    height: 60px;
+    margin-right: 10px;
+  }
+  .cardFinderinner {
+    padding: 10px 0;
+  }
+  .cardFinder h2 {
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+  }
+  .cardFinder p {
+    padding-top: 5px;
+    letter-spacing: -2px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .cardFinder h2::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(45deg);
+    top: 15px;
+    right: -40px;
+  }
+  #brands::before {
+    
+  width: 90vw;
+  margin: 0 20px;
+  }
+  #brands {
+    flex-direction: column;
+  }
+  #brands .cardAll {
+    width: 90vw;
+    justify-content: flex-start;
+  }
+  #brands .cardAll h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  #brands .cardAll p .br {
+    display: none;
+  }
+  #brands .cardAll p {
+  font-size: 16px;
+  }
+  #brands .cardAll a {
+    display: none;
+  }
+  #brands .hash {
+    display: none;
+  }
+  #brands .cardRight li:nth-child(1), #brands .cardRight li:nth-child(2) {
+    display: none;
+  }
+  #brands .cardRight {
+    
+  width: 70vw;
+  margin: 0px 10px;
+  padding: 0;
+  }
+  #brands .cardRight ul {
+    
+  width: 70vw;
+  }
+  #brands .cardRight li {
+    
+  width: calc(100% / 3 - 50px);
+  padding-top: 50px;
+  margin: 0px 0px 50px 0px;
+  letter-spacing: -1.1px;
+  }
+  #brands .cardRight li .br {
+    display: block !important;
+  }
+  .eventAll {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .eventAll a {
+    border: 1px solid;
+    border-radius: 25px;
+    width: 125px;
+    padding: 5px;
+    font-weight: 700;
+  }
+  #events {
+    
+  }
+  #events li:nth-child(7) {
+    display: none;
+  }
+  #events li {
+    
+  width: calc(100% / 2 - 0px);
+  }
+  #events li a {
+    
+  width: 175px;
+  letter-spacing: -2px;
+  }
+  #events li a img {
+    width: 45vw;
+  }
+  
+  .news {
+    display: none;
+  }
+  footer .footerTop {
+    display: none;
+  }
+  footer .footerLink {
+    display: none;
+  }
+  footer .footerCompany {
+    display: none;
+  }
+  main .sidebar {
+    width: 90vw;
+    margin: 10px;
+  }
+  #login {
+    
+  margin: 0;
+  position: initial;
+  }
+  .mFinace {
+    display: block !important;
+    font-weight: 700;
+    margin-top: 15px;
+  }
+  .finace {
+    margin: 30px 0;
+  }
+  .finace h2 {
+    font-size: 24px;
+  }
+  .finace h2::after {
+    display: none;
+
+  }
+  .finace ul {
+ 
+  width: 88vw;
+  }
+  .finace ul h3 {
+    font-size: 18px;
+  }
+  .finace ul li p {
+    font-size: 14px;
+  }
+  footer {
+    margin: 0;
+  }
+  .mfooterLink {
+    display: block !important;
+  }
+  .mfooterLink ul {
+    display: flex;
+    gap: 15px;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  footer .footerAdress {
+    letter-spacing: -2px;
   }
 }
