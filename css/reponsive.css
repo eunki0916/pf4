@@ -167,6 +167,33 @@
 }
 @media screen and (max-width: 764px) {
   
+  .menb {
+    position: relative;
+    display: block !important;
+  }
+  .menb .enb {
+    display: flex !important;
+    gap: 15px;
+    position: absolute;
+    top: 7.5vw;
+    left: -17vw;
+  }
+  .menb .enb li a {
+    font-size: 0;
+    width: 25px;
+    height: 20px;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    display: flex;
+    align-items: center;
+  }
+  .menb .enb li a::before {
+    content: "";
+    border-top: 3px solid;
+    width: 100%;
+    display: block;
+    background-color: #666;
+  }
   header .tnb, header .right {
     display: none;
   }
@@ -198,14 +225,15 @@
   }
   #banner {
     overflow-x: scroll;
+    height: 90vw;
     margin-top: 10px;
   }
   #banner .bannerBox {
-    width: 300vw;
+    width: 200vw;
     overflow: initial;
   }
   #banner .imgInner ul {
-    width: 200vw;
+    width: 267vw;
   }
   #banner .imgInner ul li:nth-child(1) img,   #banner .imgInner ul li:nth-child(2) img ,   #banner .imgInner ul li:nth-child(3) img {
     width: 85vw;
@@ -494,8 +522,10 @@
     gap: 15px;
     font-weight: 700;
     font-size: 14px;
+    justify-content: space-between;
   }
   footer .footerAdress {
     letter-spacing: -2px;
+    line-height: 1.2;
   }
 }
