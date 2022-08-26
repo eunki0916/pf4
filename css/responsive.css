@@ -1,3 +1,51 @@
+@media screen and (min-width: 1200px) and (max-width: 1800px) {
+  header .search {
+    display: none;
+  }
+  header .tnb .tnbli {
+    padding: 10px;
+  }
+  main .content {
+    width: 80vw;
+  }
+  main .sidebar {
+    width: 20vw;
+  }
+  section {
+    width: 80vw;
+  }
+  #banner .bannerBox {
+    width: 80vw;
+  }
+  #events li a img {
+    width: 18vw;
+  }
+  main .sidebar::after {
+  content: "";
+  border-left: 1px solid #eee;
+  display: block;
+  height: 2500px;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  }
+  #login .password a {
+    left: 13vw;
+  }
+  #login .service ul {
+    width: 18vw;
+    font-size: 13px;
+    letter-spacing: -1px;
+  }
+  .finace ul {
+    width: 18vw;
+    font-size: 15px;
+  }
+  .news ul li {
+    width: 18vw;
+  }
+  
+}
 @media screen and (max-width: 1200px) {
   .inner {
     margin: 0;
